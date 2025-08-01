@@ -1,4 +1,4 @@
-# 🛒 MERN E-Commerce App (Mini Amazon Clone)
+# 🛒 MERN E-Commerce Application 
 
 A full-stack **MERN** application built with **MongoDB, Express.js, React, and Node.js**.  
 Frontend is styled using **Chakra UI** for modern and responsive design.
