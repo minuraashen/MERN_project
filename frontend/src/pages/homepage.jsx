@@ -10,6 +10,7 @@ const Homepage = () => {
     fetchProducts();
   }, [fetchProducts]);
   console.log("products",products)
+
   return (
     <Container maxW='container.x1' py={12}>
       <VStack spacing={8}>
@@ -35,8 +36,8 @@ const Homepage = () => {
               <ProductCard key={product._id} product={product}/>
             ))}
         </SimpleGrid>
-
-        <Text fontSize='x1' textAlign={"centre"} fontWeight="bold" color='gray.500'>
+        {products.length === 0 && (
+          <Text fontSize='x1' textAlign={"centre"} fontWeight="bold" color='gray.500'>
           No products found 😢{" "}
           <Link to={'/create'}>
             <Text as='span' color='purple.300' _hover={{ textDecoration: "underline"}}>
@@ -44,6 +45,8 @@ const Homepage = () => {
             </Text>
           </Link>
         </Text>
+        )}
+        
       </VStack>
 
     </Container>
