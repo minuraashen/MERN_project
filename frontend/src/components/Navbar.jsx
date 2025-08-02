@@ -25,13 +25,13 @@ const Navbar = () => {
           fontWeight={"bold"}
           textTransform={"uppercase"}
           textAlign={"center"}
-          bgGradient={"linear(to-r, blue.600, green.600)"}
+          bgGradient={"linear(to-r, pink.400, purple.500)"}
           bgClip={"text"}
           >
             <Link to={"/"}>Product Store 🛒</Link>
         </Text>
         <HStack spacing={2} alignItems={"center"}>
-          <Link>
+          <Link to={'/create'}>
             <Button>
               <PlusSquareIcon fontSize={20}/>
             </Button>
