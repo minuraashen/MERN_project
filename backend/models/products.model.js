@@ -1,22 +1,13 @@
 import mongoose from 'mongoose';
 
 const productSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-  },
-  price: {
-    type: Number,
-    required: true,
-  },
-  description: {
-    type: String,
-    required: true,
-  },
-  image: {
-    type: String,
-    required: true,
-  },
+  name: {type: String, required: true},
+  price: {type: Number,required: true},
+  description: {type: String},
+  image: {type: String},
+  category: {type: String, required: true},
+  subcategory: {type: String},
+  subitem: {type: String}
 },{
   timestamps: true, // Automatically adds createdAt and updatedAt fields
 });
