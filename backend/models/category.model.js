@@ -6,12 +6,12 @@ const subitemSchema = new mongoose.Schema({
 
 const subcategorySchema = new mongoose.Schema({
   name: {type: String, required: true},
-  items: [subitemSchema]
+  subItems: [subitemSchema]
 })
 
 const categorySchema =  new mongoose.Schema({
   name: {type: String, required: true},
-  items: [subcategorySchema]
+  subcategories: [subcategorySchema]
 })
 
 const Category = mongoose.model("Category", categorySchema)
