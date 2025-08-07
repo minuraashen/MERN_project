@@ -1,4 +1,17 @@
-import { Box, Container, VStack, Heading, Input, Button, useColorModeValue } from '@chakra-ui/react';
+import { Box, Heading } from '@chakra-ui/react'
+
+function Createpage() {
+  return (
+    <Box p={6}>
+      <Heading>Create Page</Heading>
+      {/* Add forms for category/product creation here */}
+    </Box>
+  )
+}
+
+export default Createpage
+
+/*import { Box, Container, VStack, Heading, Input, Button, useColorModeValue } from '@chakra-ui/react';
 import { useState } from "react";
 import { useProductStore } from '../store/product';
 import { useToast } from '@chakra-ui/react'
@@ -84,4 +97,4 @@ const Createpage = () => {
   )
 };
 
-export default Createpage
+export default Createpage */
