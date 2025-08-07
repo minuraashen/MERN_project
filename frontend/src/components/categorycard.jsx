@@ -1,15 +1,7 @@
-import { Card, CardBody, Heading, useColorModeValue, useDisclosure } from "@chakra-ui/react"
+import { Card, CardBody, Heading } from "@chakra-ui/react"
 import { useNavigate } from "react-router-dom"
-import { useCategoryStore } from "../store/category"
-import { useState } from "react"
 
-const CategoryCard = ({ category }) => {
-  const { deleteCategory, updateCategory } = useCategoryStore
-  const toast = useToast()
-  const [ updatedCategory, setUpdatedCategory ] = useState(category)
-
-  const { isOpen, onOpne, onClose } = useDisclosure()
-}
+function CategoryCard({ name }) {
   const navigate = useNavigate()
   const handleClick = () => {
     navigate(`/category/${name.toLowerCase()}`)
@@ -22,5 +14,6 @@ const CategoryCard = ({ category }) => {
       </CardBody>
     </Card>
   )
+}
 
 export default CategoryCard
