@@ -14,8 +14,8 @@ export const getProducts = async (req, res) => {
 export const createProducts = async (req,res) => {
   const product = req.body; //user will send this data
 
-  if (!product.name || !product.price || !product.description || !product.image) {
-    return res.status(400).json({success: false, message: 'All fields are required' });
+  if (!product.name || !product.price || !product.stock || !product.category || !product.subcategory) {
+    return res.status(400).json({success: false, message: 'All Essentaial fields are required' });
   }
 
   const newProduct = new Product(product);

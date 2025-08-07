@@ -1,7 +1,7 @@
 import mongoose from "mongoose"
 
 const subitemSchema = new mongoose.Schema({
-  name: {type: String, requied: true},
+  name: {type: String},
 })
 
 const subcategorySchema = new mongoose.Schema({
@@ -11,7 +11,7 @@ const subcategorySchema = new mongoose.Schema({
 
 const categorySchema =  new mongoose.Schema({
   name: {type: String, required: true},
-  subcategories: [subcategorySchema]
+  subCategories: [subcategorySchema]
 })
 
 const Category = mongoose.model("Category", categorySchema)
