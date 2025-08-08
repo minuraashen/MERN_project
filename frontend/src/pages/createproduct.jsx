@@ -1,6 +1,7 @@
-import { Box, useToast, VStack, Input, Button, Heading, Flex, Text } from '@chakra-ui/react'
+import { Box, useToast, VStack, Input, Button, Heading, Flex, Text, Textarea } from '@chakra-ui/react'
 import { useProductStore } from '../store/product.js'
 import { useState } from 'react'
+import { resize } from 'framer-motion'
 
 const CreateProductPage = () => {
   const [ newProduct, setNewProduct ] = useState({
@@ -17,6 +18,7 @@ const CreateProductPage = () => {
   const toast = useToast()
 
   const {createProduct} = useProductStore()
+
   const handleAddProduct = async () => {
     const { success, message } = await createProduct(newProduct)
     if (!success) {
@@ -85,9 +87,9 @@ const CreateProductPage = () => {
           value={newProduct.stock}
           onChange={(e) => setNewProduct({ ...newProduct, stock: e.target.value})}
           />
-          <Input
+          <Textarea
           fontSize='2xl'
-          h={{ base:'40px', md:'64px', lg:'80px' }}
+          h={{ base:'64px', md:'80px', lg:'120px' }}
           placeholder='Product Description'
           value={newProduct.description}
           onChange={(e) => setNewProduct({ ...newProduct, description: e.target.value})}
