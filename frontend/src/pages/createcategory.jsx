@@ -1,4 +1,6 @@
 import React from 'react'
+import { useState } from 'react'
+import { useCategoryStore } from '../store/category.js'
 
 const CreateCategoryPage = () => {
   const [ newCategory, setNewCategory] = useState({

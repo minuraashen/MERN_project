@@ -1,7 +1,4 @@
 import { Box, Heading, HStack, useToast, Flex, AspectRatio } from '@chakra-ui/react'
-import { useCategoryStore } from '../store/category.js'
-import { useProductStore} from '../store/product.js'
-import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 
@@ -39,7 +36,7 @@ const Createpage = () => {
           left: 0,
           w: "100%",
           h: "100%",
-          bg: "rgba(0, 0, 0, 0.4)",
+          bg: "rgba(121, 118, 118, 0.4)",
           backdropFilter: "blur(4px)",
           zIndex: 0,
         }}
@@ -52,7 +49,7 @@ const Createpage = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <Heading color="white" fontSize="2xl">
+          <Heading color="white" fontSize={{base:"xl", md:"2xl", lg:"4xl"}}>
             Create New Category
           </Heading>
         </Box>
@@ -82,7 +79,7 @@ const Createpage = () => {
           left: 0,
           w: "100%",
           h: "100%",
-          bg: "rgba(0, 0, 0, 0.4)",
+          bg: "rgba(137, 134, 134, 0.4)",
           backdropFilter: "blur(4px)",
           zIndex: 0,
         }}
@@ -95,7 +92,7 @@ const Createpage = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <Heading color="white" fontSize="2xl">
+          <Heading color="white" fontSize={{base:"xl", md:"2xl", lg:"4xl"}}>
             Create New Product
           </Heading>
         </Box>
