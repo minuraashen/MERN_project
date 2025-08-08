@@ -1,13 +1,110 @@
-import { Box, Heading } from '@chakra-ui/react'
+import { Box, Heading, HStack, useToast, Flex, AspectRatio } from '@chakra-ui/react'
+import { useCategoryStore } from '../store/category.js'
+import { useProductStore} from '../store/product.js'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
-function Createpage() {
+
+
+const blurredBg1 = "https://images.unsplash.com/photo-1601599561213-832382fd07ba?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+const blurredBg2 = "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
+
+const Createpage = () => {
+  const navigate = useNavigate()
+
   return (
-    <Box p={6}>
-      <Heading>Create Page</Heading>
-      {/* Add forms for category/product creation here */}
-    </Box>
+    <HStack
+      spacing={10}
+      justify="center"
+      align="center"
+      px={10}
+      py={20}
+      wrap="wrap"
+    >
+      {/* Create Category Button */}
+    <AspectRatio ratio={16/9} w={{ base: "90%", md: "45%" }} borderRadius="xl"
+        overflow="hidden"
+        cursor="pointer"
+        onClick={() => navigate('/createcategory')}>
+      <Box
+        bgImage={`url(${blurredBg2})`}
+        bgSize="cover"
+        bgPosition="center"
+        position="relative"
+        _before={{
+          content: '""',
+          position: "absolute",
+          top: 0,
+          left: 0,
+          w: "100%",
+          h: "100%",
+          bg: "rgba(0, 0, 0, 0.4)",
+          backdropFilter: "blur(4px)",
+          zIndex: 0,
+        }}
+      >
+        <Box
+          position="relative"
+          zIndex={1}
+          h="100%"
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Heading color="white" fontSize="2xl">
+            Create New Category
+          </Heading>
+        </Box>
+      </Box>
+    </AspectRatio>
+
+      {/* Create Product Button */}
+
+      <AspectRatio 
+        ratio={16/9}
+        overflow="hidden"
+        cursor="pointer"
+        w={{ base: "90%", md: "45%" }}
+        borderRadius="xl">
+      <Box
+
+        bgImage={`url(${blurredBg1})`}
+        bgSize="cover"
+        bgPosition="center"
+        position="relative"
+
+        onClick={() => navigate('/createproduct')}
+        _before={{
+          content: '""',
+          position: "absolute",
+          top: 0,
+          left: 0,
+          w: "100%",
+          h: "100%",
+          bg: "rgba(0, 0, 0, 0.4)",
+          backdropFilter: "blur(4px)",
+          zIndex: 0,
+        }}
+      >
+        <Box
+          position="relative"
+          zIndex={1}
+          h="100%"
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Heading color="white" fontSize="2xl">
+            Create New Product
+          </Heading>
+        </Box>
+      </Box>
+      </AspectRatio>
+    </HStack>
   )
 }
+
 
 export default Createpage
 

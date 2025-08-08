@@ -1,4 +1,4 @@
-import { Button, Card, CardBody, CardFooter, Heading, HStack, useColorModeValue, VStack, useToast, useDisclosure, Image, Text, Divider } from "@chakra-ui/react"
+import { Button, Card, CardBody, CardFooter, Heading, Flex, useColorModeValue, VStack, useToast, useDisclosure, Image, Text, Divider, HStack, AspectRatio } from "@chakra-ui/react"
 import { useNavigate } from "react-router-dom"
 import { useCategoryStore } from "../store/category"
 import { useState } from "react"
@@ -64,18 +64,19 @@ const CategoryCard = ({ category }) => {
   return (
     <Card onClick={handleCardClick} cursor="pointer" _hover={{ boxShadow: "lg" }}>
       <CardBody>
+        <AspectRatio w="100%" ratio={16 / 9}>
         <Image
-          src = {category.image} alt={category.name} borderRadius='md'
+          src = {category.image} alt={category.name} borderRadius='md' objectFit="cover" w="100%" h="250px"
         />
+        </AspectRatio>
         <VStack mt={3} align="start">
-          <Heading size="md">{category.name}</Heading>
+          <Heading size="lg" >{category.name}</Heading>
           <Text fontSize="sm" color="gray.600">
             {category.description}
           </Text>
         </VStack>
-        <Divider my={4}/>
         <CardFooter>
-          <HStack spacing={2}>
+          <HStack justifyContent="flex-end" w="100%">
             <Button
               onClick={(e) => {
                 e.stopPropagation()
@@ -83,6 +84,7 @@ const CategoryCard = ({ category }) => {
               }}
               colorScheme="blue"
               size="sm"
+              variant="outline"
             >
               Update
             </Button>
@@ -93,12 +95,12 @@ const CategoryCard = ({ category }) => {
               }}
               colorScheme="red"
               size="sm"
+              variant="outline"
             >
               Delete
             </Button>
           </HStack>
         </CardFooter>
-        <Heading size="md">{category.name}</Heading>
       </CardBody>
     </Card>
   )

@@ -41,7 +41,7 @@ function Homepage() {
       py={10}
     >
       <Box bg='whiteAlpha.600' p={6} borderRadius='lg' backdropFilter='blur(2px)'>
-        <Heading mb={4} align={Center}>Browse Categories</Heading>
+        <Heading mb={4} align={Center}>CATEGORIES</Heading>
         {categories.length === 0 ? <Spinner /> :
           <SimpleGrid columns={
             {base:1,
@@ -59,6 +59,7 @@ function Homepage() {
 }
 
 export default Homepage
+
 
 /*import { Container, SimpleGrid, Text, VStack } from "@chakra-ui/react";
 import { Link } from "react-router-dom";

@@ -46,9 +46,14 @@ function Navbar() {
         <Spacer />
 
         {/*Cart Button */}
+        <HStack spacing={3}>
           <Button variant="outline" colorScheme="blackAlpha">
             Cart
           </Button>
+          <Button variant="outline" colorScheme="blackAlpha">
+            Add New
+          </Button>
+        </HStack>
       </Flex>
     </Box>
   )
