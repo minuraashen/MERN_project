@@ -49,7 +49,7 @@ function Homepage() {
             lg:3}
           } spacing={8}>
             {categories.map(cat => (
-              <CategoryCard key={cat._id} name={cat.name} />
+              <CategoryCard key={cat._id} category={cat} />
             ))}
           </SimpleGrid>
         }

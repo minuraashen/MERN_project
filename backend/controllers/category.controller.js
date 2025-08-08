@@ -14,7 +14,7 @@ export const getCategories = async (req, res) => {
 
 //  Create a new category
 export const createCategory = async (req, res) => {
-  const { name, subCategories } = req.body;
+  const { name, image, description, subCategories } = req.body;
 
   if (!name) {
     return res.status(400).json({ success: false, message: "Category name is required" });
@@ -31,7 +31,7 @@ export const createCategory = async (req, res) => {
   }
 
   try {
-    const newCategory = new Category({ name, subCategories });
+    const newCategory = new Category({ name, image, description, subCategories });
     await newCategory.save();
     res.status(201).json({ success: true, data: newCategory, message: "Created category successfully" });
   } catch (error) {
@@ -43,7 +43,7 @@ export const createCategory = async (req, res) => {
 // Update category
 export const updateCategory = async (req, res) => {
   const { id } = req.params;
-  const { name, subCategories, subItems } = req.body;
+  const { name, image, description, subCategories, subItems } = req.body;
 
   if (!mongoose.Types.ObjectId.isValid(id)) {
     return res.status(400).json({ success: false, message: 'Invalid category ID' });
@@ -52,7 +52,7 @@ export const updateCategory = async (req, res) => {
   try {
     const updatedCategory = await Category.findByIdAndUpdate(
       id,
-      { name, subCategories, subItems },
+      { name, image, description, subCategories, subItems },
       { new: true, runValidators: true }
     );
 
