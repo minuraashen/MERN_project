@@ -1,28 +1,33 @@
-# 🛒 MERN E-Commerce Application 
+# 🛍️ MERN Online Shopping Store
 
-A full-stack **MERN** application built with **MongoDB, Express.js, React, and Node.js**.  
-Frontend is styled using **Chakra UI** for modern and responsive design.
+A full-stack e-commerce web application built with the **MERN stack** (MongoDB, Express.js, React.js, Node.js) and **Chakra UI** for styling.  
+It supports a hierarchical product structure with **categories → subcategories → subitems → products**.
 
 ---
 
 ## 🚀 Features
-- ✅ **Create, Read, Update, Delete (CRUD)** products
-- ✅ **Responsive UI with Chakra UI**
-- ✅ **Product categories and subcategories**
-- ✅ **React Router** for navigation
-- ✅ **Dark/Light mode support**
-- ✅ **Backend API using Express & MongoDB**
-- ✅ Ready for **Deployment on Vercel / Render**
+
+- **Category Management** – Create, edit, delete categories with images & descriptions
+- **Subcategory & Subitem Management** – Nested product classification
+- **Product Management** – Add, edit, and delete products
+- **REST API** – Secure endpoints for all operations
+- **Responsive UI** – Built with Chakra UI
+- **MongoDB Integration** – Data stored in cloud (Atlas)
+- **Error Handling** – Descriptive messages for invalid inputs
+- **Scalable Structure** – Easily extendable for future features
 
 ---
 
-## 🛠 Tech Stack
-**Frontend**
-- React (Vite)
-- Chakra UI
-- React Router DOM
+## 🗂️ Tech Stack
 
-**Backend**
-- Node.js
-- Express.js
-- MongoDB with Mongoose
+| Layer       | Technology |
+|-------------|------------|
+| **Frontend** | React.js + Vite + Chakra UI |
+| **Backend**  | Node.js + Express.js |
+| **Database** | MongoDB Atlas |
+| **Other**    | Mongoose, Axios, Dotenv |
+
+---
+
+## 📦 Project Structure
+
