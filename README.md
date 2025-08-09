@@ -105,18 +105,11 @@ All functions in product controller✅
 ---
 
 ### 2. Home Page  
-Step 1  
-  
-<img src="./Results/Homepage_v1.png" width="400">  
-
-Step 2  
-  
-![](./Results/Homepage_v2.png)  
-
-Step 3   
-  
-![](./Results/Homepage_v3.png)  
-
+<p align="center">  
+  <img src="./Results/Homepage_v1.png" alt="Step 1" width="400" height="300">  
+  <img src="./Results/Homepage_v1.png" alt="Step 1" width="400" height="300">
+  <img src="./Results/Homepage_v1.png" alt="Step 1" width="400" height="300">
+</p>
 ---
 
 ### 3. Create Page
