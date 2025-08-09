@@ -91,6 +91,49 @@ npm start
 | DELETE | `/:id`               | Delete a product by ID              |
 ---
 
+## Results (Up to now)
+### 1. Checking APIs with Postman  
+  
+All functions in category controller✅  
+  
+![](./Results/postmancategory.png)  
+  
+All functions in product controller✅  
+  
+![](./Results/postmanproduct.png)  
+
+---
+
+### 2. Home Page  
+Step 1  
+  
+![](./Results/Homepage_v1.png)  
+
+Step 2  
+  
+![](./Results/Homepage_v1.png)  
+
+Step 3   
+  
+![](./Results/Homepage_v1.png)  
+
+---
+
+### 3. Create Page
+
+![](./Results/create)  
+
+---
+
+***Create Product***
+
+![](./Results/addproduct)  
+
+***Create Category***
+
+![](./Results/addcategory)  
+
+
 
 
 
