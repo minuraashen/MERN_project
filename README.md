@@ -31,3 +31,25 @@ It supports a hierarchical product structure with **categories → subcategories
 
 ## 📦 Project Structure
 
+📂 mern-store
+┣ 📂 backend
+┃ ┣ 📂 models
+┃ ┃ ┣ category.js
+┃ ┃ ┣ product.js
+┃ ┣ 📂 routes
+┃ ┃ ┣ categoryRoutes.js
+┃ ┃ ┣ productRoutes.js
+┃ ┣ server.js
+┃ ┗ db.js
+┣ 📂 frontend
+┃ ┣ 📂 src
+┃ ┃ ┣ 📂 components
+┃ ┃ ┣ 📂 pages
+┃ ┃ ┣ App.jsx
+┃ ┃ ┗ main.jsx
+┣ .env
+┣ package.json
+┣ README.md
+
+
+
