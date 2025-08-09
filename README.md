@@ -107,7 +107,7 @@ All functions in product controller✅
 ### 2. Home Page  
 Step 1  
   
-![](./Results/Homepage_v1.png)  
+<img src="./Results/Homepage_v1.png" width="400">  
 
 Step 2  
   
