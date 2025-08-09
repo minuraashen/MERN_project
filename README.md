@@ -7,14 +7,18 @@ It supports a hierarchical product structure with **categories → subcategories
 
 ## 🚀 Features
 
-- **Category Management** – Create, edit, delete categories with images & descriptions
-- **Subcategory & Subitem Management** – Nested product classification
-- **Product Management** – Add, edit, and delete products
-- **REST API** – Secure endpoints for all operations
-- **Responsive UI** – Built with Chakra UI
-- **MongoDB Integration** – Data stored in cloud (Atlas)
-- **Error Handling** – Descriptive messages for invalid inputs
-- **Scalable Structure** – Easily extendable for future features
+## 🚀 Features  
+### Frontend  
+- 📂 **Category & Subcategory Navigation** – Navigate from categories to subcategories and then to product listings.  
+- 📱 **Responsive Design** – Works seamlessly on desktop and mobile devices.  
+- 🛍 **Product Cards** – View product details including images, description, and price.  
+- 🔍 **Dynamic Routing** – Category → Subcategory → Product flow.  
+
+### Backend  
+- 📦 **RESTful API** – Built with Express.js for products, categories, and subcategories.  
+- 🗄 **MongoDB Database** – Stores product and category data.  
+- 🔐 **Environment Variables** – Securely handle API keys, database URIs, etc.  
+- 📜 **MVC Structure** – Clean separation of concerns with models, routes, and controllers.
 
 ---
 
@@ -25,23 +29,9 @@ It supports a hierarchical product structure with **categories → subcategories
 | **Frontend** | React.js + Vite + Chakra UI |
 | **Backend**  | Node.js + Express.js |
 | **Database** | MongoDB Atlas |
-| **Other**    | Mongoose, Axios, Dotenv |
+| **Other**    | Mongoose, Axios, Dotenv, Git/Github |
 
----
-
-
-🚀 Features  
-Frontend  
-- 📂 Category & Subcategory Navigation – Navigate from categories to subcategories and then to product listings.  
-- 📱 Responsive Design – Works seamlessly on desktop and mobile devices.  
-- 🛍 Product Cards – View product details including images, description, and price.  
-- 🔍 Dynamic Routing – Category → Subcategory → Product flow.  
-
-Backend  
-- 📦 RESTful API – Built with Express.js for products, categories, and subcategories.  
-- 🗄 MongoDB Database – Stores product and category data.  
-- 🔐 Environment Variables – Securely handle API keys, database URIs, etc.  
-- 📜 MVC Structure – Clean separation of concerns with models, routes, and controllers.  
+---  
 
 🛠 Tech Stack  
 - Frontend:  
