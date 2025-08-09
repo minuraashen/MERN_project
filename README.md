@@ -37,6 +37,37 @@ This app allows users to browse products by category and subcategory, view detai
 git clone https://github.com/yourusername/mern-store.git
 cd mern-store
 ```
+### 2. Install dependencies
+***Backend***
+```sh
+cd backend
+npm install
+```
+
+***Frontend***
+```sh
+cd ../frontend
+npm install
+```
+
+### 3. Setup environment variables  
+Create a .env file inside the backend folder:
+```sh
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+```
+
+### 4. Run the project
+***Backend***
+```sh
+npm run dev
+```
+
+***Frontend***
+```sh
+cd ../frontend
+npm start
+```
 
 
 
