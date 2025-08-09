@@ -1,4 +1,4 @@
-# 🛍️ MERN Online Shopping Store
+# 🛍️ MERN Online Shopping Store (Ongoing Project)
 
 A full-stack e-commerce web application built with the **MERN stack** (MongoDB, Express.js, React.js, Node.js) and **Chakra UI** for styling.  
 It supports a hierarchical product structure with **categories → subcategories → subitems → products**.
@@ -32,7 +32,7 @@ It supports a hierarchical product structure with **categories → subcategories
 ## 📦 Project Structure
 
 📂 mern-store
-┣ 📂 backend
+|-📂 backend
 ┃ ┣ 📂 models
 ┃ ┃ ┣ category.js
 ┃ ┃ ┗ product.js
