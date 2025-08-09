@@ -92,11 +92,15 @@ npm start
 ---
 
 ## Results (Up to now)
-### 1. Checking APIs with Postman
+### 1. Checking APIs with Postman  
+  
 All functions in category controller✅  
-![](./Results/postmancategory.png)
-All functions in product controller✅
-![](./Results/postmanproduct.png)
+  
+![](./Results/postmancategory.png)  
+  
+All functions in product controller✅  
+  
+![](./Results/postmanproduct.png)  
 
 
 
