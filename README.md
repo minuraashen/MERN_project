@@ -31,7 +31,7 @@ It supports a hierarchical product structure with **categories → subcategories
 
 ## 📦 Project Structure
 
-📂 mern-store
+📂 MERN_PROJECT  
 |-📂 backend
 ┃ ┣ 📂 models
 ┃ ┃ ┣ category.js
