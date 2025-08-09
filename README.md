@@ -1,11 +1,9 @@
 # 🛍️ MERN Online Shopping Store (Ongoing Project)
 
-A full-stack e-commerce web application built with the **MERN stack** (MongoDB, Express.js, React.js, Node.js) and **Chakra UI** for styling.  
-It supports a hierarchical product structure with **categories → subcategories → subitems → products**.
+A full-featured online shopping web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+This app allows users to browse products by category and subcategory, view detailed product information, and manage a shopping cart — with a fully functional backend and responsive frontend.
 
 ---
-
-## 🚀 Features
 
 ## 🚀 Features  
 ### Frontend  
@@ -33,20 +31,12 @@ It supports a hierarchical product structure with **categories → subcategories
 
 ---  
 
-🛠 Tech Stack  
-- Frontend:  
-  - React.js  
-  - Chakra UI (UI components)  
-  - Axios (API requests)  
-  - React Router DOM  
-- Backend:  
-  - Node.js  
-  - Express.js  
-  - MongoDB & Mongoose  
-- Other Tools:  
-  - Git & GitHub  
-  - dotenv for environment configuration  
-  - nodemon for development  
+## ⚙️ Installation & Setup
+### 1. Clone the repository
+```sh 
+git clone https://github.com/yourusername/mern-store.git
+cd mern-store
+```
 
 
 
