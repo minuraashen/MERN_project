@@ -29,44 +29,34 @@ It supports a hierarchical product structure with **categories → subcategories
 
 ---
 
-📂 MERN_PROJECT/  
-├── 📂 backend/  
-│   ├── 📂 models/    
-│   │   ├── category.model.js      
-│   │   ├── product.model.js    
-│   ├── 📂 routes/  
-│   │   ├── categoryRoutes.js  
-│   │   ├── productRoutes.js  
-│   ├── 📂 controllers/  
-│   │   ├── category.controller.js   
-│   │   ├── product.controller.js    
-│   ├── server.js    
-│   └── 📂 config/  
-│        ├── db.js  
-├── 📂 frontend/    
-│   ├── 📂 src/    
-│   │   ├── 📂 components/  
-│   │   │     ├── categorycard.jsx   
-│   │   │     ├── Navbar.jsx   
-│   │   │     ├── productcard.jsx   
-│   │   │     ├── subcategorycard.jsx   
-│   │   │     ├── subitemcard.jsx   
-│   │   ├── 📂 pages/  
-│   │   │     ├── createcategory.jsx   
-│   │   │     ├── createpage.jsx   
-│   │   │     ├── createproduct.jsx   
-│   │   │     ├── homepage.jsx   
-│   │   │     ├── productdetailpage.jsx   
-│   │   │     ├── productspage.jsx   
-│   │   │     ├── subcategorypage.jsx   
-│   │   │     ├── subitempage.jsx   
-│   │   ├── 📂 store/  
-│   │   │     ├── category.js   
-│   │   │     ├── product.js   
-│   │   ├── App.jsx    
-│   │   └── index.jsx    
-└── README.md  
 
+🚀 Features  
+Frontend  
+- 📂 Category & Subcategory Navigation – Navigate from categories to subcategories and then to product listings.  
+- 📱 Responsive Design – Works seamlessly on desktop and mobile devices.  
+- 🛍 Product Cards – View product details including images, description, and price.  
+- 🔍 Dynamic Routing – Category → Subcategory → Product flow.  
+
+Backend  
+- 📦 RESTful API – Built with Express.js for products, categories, and subcategories.  
+- 🗄 MongoDB Database – Stores product and category data.  
+- 🔐 Environment Variables – Securely handle API keys, database URIs, etc.  
+- 📜 MVC Structure – Clean separation of concerns with models, routes, and controllers.  
+
+🛠 Tech Stack  
+- Frontend:  
+  - React.js  
+  - Chakra UI (UI components)  
+  - Axios (API requests)  
+  - React Router DOM  
+- Backend:  
+  - Node.js  
+  - Express.js  
+  - MongoDB & Mongoose  
+- Other Tools:  
+  - Git & GitHub  
+  - dotenv for environment configuration  
+  - nodemon for development  
 
 
 
