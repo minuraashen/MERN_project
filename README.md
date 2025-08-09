@@ -31,24 +31,47 @@ It supports a hierarchical product structure with **categories → subcategories
 
 ## 📦 Project Structure
 
-📂 MERN_PROJECT  
-|-📂 backend
-┃ ┣ 📂 models
-┃ ┃ ┣ category.js
-┃ ┃ ┗ product.js
-┃ ┣ 📂 routes
-┃ ┃ ┣ categoryRoutes.js
-┃ ┃ ┗ productRoutes.js
-┃ ┣ server.js
-┃ ┗ db.js
-┣ 📂 frontend
-┃ ┣ 📂 src
-┃ ┃ ┣ 📂 components
-┃ ┃ ┣ 📂 pages
-┃ ┃ ┣ App.jsx
-┃ ┃ ┗ main.jsx
-┣ .env
-┣ package.json
-┗ README.md
+📂 MERN_PROJECT/  
+├── 📂 backend/  
+│   ├── 📂 models/  
+│   │   ├── category.model.js  
+│   │   ├── product.model.js  
+│   ├── 📂 routes/  
+│   │   ├── categoryRoutes.js  
+│   │   ├── productRoutes.js  
+│   ├── 📂 controllers/ 
+│   │   ├── category.conteroller.js  
+│   │   ├── product.controller.js  
+│   ├── server.js  
+│   └── 📂 config/
+│        ├── db.js
+├── 📂 frontend/  
+│   ├── 📂 src/  
+│   │   ├── 📂 components/
+│   │   │     ├── App.jsx 
+│   │   │     ├── App.jsx 
+│   │   │     ├── App.jsx 
+│   │   │     ├── App.jsx 
+│   │   │     ├── App.jsx 
+│   │   │     ├── App.jsx 
+│   │   ├── 📂 pages/
+│   │   │     ├── App.jsx 
+│   │   │     ├── App.jsx 
+│   │   │     ├── App.jsx 
+│   │   │     ├── App.jsx 
+│   │   │     ├── App.jsx 
+│   │   │     ├── App.jsx 
+│   │   │     ├── App.jsx 
+│   │   │     ├── App.jsx 
+│   │   ├── 📂 store/
+│   │   │     ├── App.jsx 
+│   │   │     ├── App.jsx 
+│   │   ├── App.jsx  
+│   │   └── index.jsx  
+└── README.md
+
+
+
+
 
 
