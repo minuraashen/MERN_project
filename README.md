@@ -35,10 +35,10 @@ It supports a hierarchical product structure with **categories → subcategories
 ┣ 📂 backend
 ┃ ┣ 📂 models
 ┃ ┃ ┣ category.js
-┃ ┃ ┣ product.js
+┃ ┃ ┗ product.js
 ┃ ┣ 📂 routes
 ┃ ┃ ┣ categoryRoutes.js
-┃ ┃ ┣ productRoutes.js
+┃ ┃ ┗ productRoutes.js
 ┃ ┣ server.js
 ┃ ┗ db.js
 ┣ 📂 frontend
@@ -49,7 +49,6 @@ It supports a hierarchical product structure with **categories → subcategories
 ┃ ┃ ┗ main.jsx
 ┣ .env
 ┣ package.json
-┣ README.md
-
+┗ README.md
 
 
