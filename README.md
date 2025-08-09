@@ -121,17 +121,17 @@ Step 3
 
 ### 3. Create Page
 
-![](./Results/create)  
+![](./Results/create.png)  
 
 ---
 
 ***Create Product***
 
-![](./Results/addproduct)  
+![](./Results/addproduct.png)  
 
 ***Create Category***
 
-![](./Results/addcategory)  
+![](./Results/addcategory.png)  
 
 
 
