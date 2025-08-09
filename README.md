@@ -29,8 +29,6 @@ It supports a hierarchical product structure with **categories → subcategories
 
 ---
 
-## 📦 Project Structure
-
 📂 MERN_PROJECT/  
 ├── 📂 backend/  
 │   ├── 📂 models/  
@@ -40,7 +38,7 @@ It supports a hierarchical product structure with **categories → subcategories
 │   │   ├── categoryRoutes.js  
 │   │   ├── productRoutes.js  
 │   ├── 📂 controllers/ 
-│   │   ├── category.conteroller.js  
+│   │   ├── category.controller.js  
 │   │   ├── product.controller.js  
 │   ├── server.js  
 │   └── 📂 config/
@@ -48,27 +46,27 @@ It supports a hierarchical product structure with **categories → subcategories
 ├── 📂 frontend/  
 │   ├── 📂 src/  
 │   │   ├── 📂 components/
-│   │   │     ├── App.jsx 
-│   │   │     ├── App.jsx 
-│   │   │     ├── App.jsx 
-│   │   │     ├── App.jsx 
-│   │   │     ├── App.jsx 
-│   │   │     ├── App.jsx 
+│   │   │     ├── categorycard.jsx 
+│   │   │     ├── Navbar.jsx 
+│   │   │     ├── productcard.jsx 
+│   │   │     ├── subcategorycard.jsx 
+│   │   │     ├── subitemcard.jsx 
 │   │   ├── 📂 pages/
-│   │   │     ├── App.jsx 
-│   │   │     ├── App.jsx 
-│   │   │     ├── App.jsx 
-│   │   │     ├── App.jsx 
-│   │   │     ├── App.jsx 
-│   │   │     ├── App.jsx 
-│   │   │     ├── App.jsx 
-│   │   │     ├── App.jsx 
+│   │   │     ├── createcategory.jsx 
+│   │   │     ├── createpage.jsx 
+│   │   │     ├── createproduct.jsx 
+│   │   │     ├── homepage.jsx 
+│   │   │     ├── productdetailpage.jsx 
+│   │   │     ├── productspage.jsx 
+│   │   │     ├── subcategorypage.jsx 
+│   │   │     ├── subitempage.jsx 
 │   │   ├── 📂 store/
-│   │   │     ├── App.jsx 
-│   │   │     ├── App.jsx 
+│   │   │     ├── category.js 
+│   │   │     ├── product.js 
 │   │   ├── App.jsx  
 │   │   └── index.jsx  
-└── README.md
+└── README.md  
+
 
 
 
