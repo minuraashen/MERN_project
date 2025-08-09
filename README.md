@@ -106,12 +106,15 @@ All functions in product controller✅
 
 ### 2. Home Page  
 Step 1  
+  
 ![](./Results/Homepage_v1.png)  
 
 Step 2  
+  
 ![](./Results/Homepage_v2.png)
 
-Step 3  
+Step 3   
+  
 ![](./Results/Homepage_v3.png)
 
 ---
