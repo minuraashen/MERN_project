@@ -107,31 +107,31 @@ All functions in product controller✅
 ### 2. Home Page  
 Step 1  
   
-<img src="./Results/Homepage_v1.png" , width="500">  
+![](./Results/Homepage_v1.png)  
 
 Step 2  
   
-<img src="./Results/Homepage_v2.png" , width="1000">  
+![](./Results/Homepage_v1.png)  
 
 Step 3   
   
-<img src="./Results/Homepage_v3.png" , width="200">  
+![](./Results/Homepage_v1.png)  
 
 ---
 
 ### 3. Create Page
 
-![](./Results/create)
+![](./Results/create)  
 
 ---
 
 ***Create Product***
 
-![](./Results/addproduct)
+![](./Results/addproduct)  
 
 ***Create Category***
 
-![](./Results/addcategory)
+![](./Results/addcategory)  
 
 
 
