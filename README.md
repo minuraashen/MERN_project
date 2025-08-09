@@ -107,15 +107,15 @@ All functions in product controller✅
 ### 2. Home Page  
 Step 1  
   
-![](./Results/Homepage_v1.png)  
+<img src="./Results/Homepage_v1.png" , width="500">  
 
 Step 2  
   
-![](./Results/Homepage_v2.png)
+<img src="./Results/Homepage_v2.png" , width="1000">  
 
 Step 3   
   
-![](./Results/Homepage_v3.png)
+<img src="./Results/Homepage_v3.png" , width="200">  
 
 ---
 
