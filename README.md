@@ -69,7 +69,29 @@ cd ../frontend
 npm start
 ```
 
+## 📌 API Endpoints  
 
+### **Category Routes** `/api/categories`
+| Method | Endpoint             | Description                  | Body Params |
+|--------|----------------------|------------------------------|-------------|
+| GET    | `/`                  | Get all categories           | — |
+| GET    | `/:id`               | Get category by ID           | — |
+| POST   | `/`                  | Create a new category        | `{ name, image, description }` |
+| PUT    | `/:id`               | Update a category by ID      | `{ name, image, description }` |
+| DELETE | `/:id`               | Delete a category by ID      | — |
+
+---
+
+### **Product Routes** `/api/products`
+| Method | Endpoint             | Description                         | Body Params |
+|--------|----------------------|-------------------------------------|-------------|
+| GET    | `/`                  | Get all products                    | — |
+| GET    | `/:id`               | Get product by ID                   | — |
+| POST   | `/`                  | Create a new product                | `{ name, image, description, price, categoryId, subCategoryId }` |
+| PUT    | `/:id`               | Update a product by ID              | `{ name, image, description, price }` |
+| DELETE | `/:id`               | Delete a product by ID              | — |
+
+---
 
 
 
