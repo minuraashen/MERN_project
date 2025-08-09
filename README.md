@@ -111,11 +111,11 @@ Step 1
 
 Step 2  
   
-![](./Results/Homepage_v1.png)  
+![](./Results/Homepage_v2.png)  
 
 Step 3   
   
-![](./Results/Homepage_v1.png)  
+![](./Results/Homepage_v3.png)  
 
 ---
 
