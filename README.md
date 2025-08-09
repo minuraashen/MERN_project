@@ -114,6 +114,21 @@ Step 2
 Step 3  
 ![](./Results/Homepage_v3.png)
 
+---
+
+### 3. Create Page
+
+![](./Results/create)
+
+---
+
+***Create Product***
+
+![](./Results/addproduct)
+
+***Create Category***
+
+![](./Results/addcategory)
 
 
 
