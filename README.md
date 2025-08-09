@@ -31,40 +31,40 @@ It supports a hierarchical product structure with **categories → subcategories
 
 📂 MERN_PROJECT/  
 ├── 📂 backend/  
-│   ├── 📂 models/  
-│   │   ├── category.model.js  
-│   │   ├── product.model.js  
+│   ├── 📂 models/    
+│   │   ├── category.model.js      
+│   │   ├── product.model.js    
 │   ├── 📂 routes/  
 │   │   ├── categoryRoutes.js  
 │   │   ├── productRoutes.js  
-│   ├── 📂 controllers/ 
-│   │   ├── category.controller.js  
-│   │   ├── product.controller.js  
-│   ├── server.js  
-│   └── 📂 config/
-│        ├── db.js
-├── 📂 frontend/  
-│   ├── 📂 src/  
-│   │   ├── 📂 components/
-│   │   │     ├── categorycard.jsx 
-│   │   │     ├── Navbar.jsx 
-│   │   │     ├── productcard.jsx 
-│   │   │     ├── subcategorycard.jsx 
-│   │   │     ├── subitemcard.jsx 
-│   │   ├── 📂 pages/
-│   │   │     ├── createcategory.jsx 
-│   │   │     ├── createpage.jsx 
-│   │   │     ├── createproduct.jsx 
-│   │   │     ├── homepage.jsx 
-│   │   │     ├── productdetailpage.jsx 
-│   │   │     ├── productspage.jsx 
-│   │   │     ├── subcategorypage.jsx 
-│   │   │     ├── subitempage.jsx 
-│   │   ├── 📂 store/
-│   │   │     ├── category.js 
-│   │   │     ├── product.js 
-│   │   ├── App.jsx  
-│   │   └── index.jsx  
+│   ├── 📂 controllers/  
+│   │   ├── category.controller.js   
+│   │   ├── product.controller.js    
+│   ├── server.js    
+│   └── 📂 config/  
+│        ├── db.js  
+├── 📂 frontend/    
+│   ├── 📂 src/    
+│   │   ├── 📂 components/  
+│   │   │     ├── categorycard.jsx   
+│   │   │     ├── Navbar.jsx   
+│   │   │     ├── productcard.jsx   
+│   │   │     ├── subcategorycard.jsx   
+│   │   │     ├── subitemcard.jsx   
+│   │   ├── 📂 pages/  
+│   │   │     ├── createcategory.jsx   
+│   │   │     ├── createpage.jsx   
+│   │   │     ├── createproduct.jsx   
+│   │   │     ├── homepage.jsx   
+│   │   │     ├── productdetailpage.jsx   
+│   │   │     ├── productspage.jsx   
+│   │   │     ├── subcategorypage.jsx   
+│   │   │     ├── subitempage.jsx   
+│   │   ├── 📂 store/  
+│   │   │     ├── category.js   
+│   │   │     ├── product.js   
+│   │   ├── App.jsx    
+│   │   └── index.jsx    
 └── README.md  
 
 
