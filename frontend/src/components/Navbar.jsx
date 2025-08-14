@@ -1,4 +1,68 @@
-import { Container, HStack, Flex, Button, Text, useColorMode,  } from '@chakra-ui/react';
+
+import { Box, Flex, Heading, Spacer, Button, HStack, Input, InputGroup, InputRightElement } from "@chakra-ui/react"
+import { Link } from "react-router-dom"
+import { SearchIcon } from "@chakra-ui/icons"
+import { useState } from "react"
+
+function Navbar() {
+  const [searchTerm, setSearchTerm] = useState("")
+
+  const handleSearch = () => {
+    console.log("searching for:", searchTerm)
+  }
+
+  return (
+    <Box px={6} py={4} bgGradient='linear(to-r, pink.500, yellow.300)'>
+      <Flex alignItems="center">
+        {/*Heading*/}
+        <Box p='4'>
+        <Heading size="xl" color="white">
+          <Link to="/">SHOPPING STORE </Link>
+        </Heading>
+        </Box>
+        <Spacer/>
+
+                {/* Search Bar */}
+        <InputGroup maxW="400px" flex={8} size="lg">
+          <Input
+            type="text"
+            placeholder="Search products..."
+            bg="white"
+            color="black"
+            fontWeight='400'
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          <InputRightElement>
+            <SearchIcon
+              color="gray.800"
+              cursor="pointer"
+              onClick={handleSearch}
+            />
+          </InputRightElement>
+        </InputGroup>
+
+
+        <Spacer />
+
+        {/*Cart Button */}
+        <HStack spacing={3}>
+          <Button variant="outline" colorScheme="blackAlpha">
+            Cart
+          </Button>
+          <Button variant="outline" colorScheme="blackAlpha">
+            Add New
+          </Button>
+        </HStack>
+      </Flex>
+    </Box>
+  )
+}
+
+export default Navbar
+
+
+/* import { Container, HStack, Flex, Button, Text, useColorMode } from '@chakra-ui/react';
 import { Link } from "react-router-dom";
 import { PlusSquareIcon } from "@chakra-ui/icons"
 import { IoMoon } from "react-icons/io5";
@@ -46,4 +110,4 @@ const Navbar = () => {
   )
 };
 
-export default Navbar
+export default Navbar */
