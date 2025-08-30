@@ -18,6 +18,8 @@ const categorySchema =  new mongoose.Schema({
   image: {type: String},
   description: {type: String},
   subCategories: [subcategorySchema]
+}, {
+  timestamps: true
 })
 
 const Category = mongoose.model("Category", categorySchema)

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { Box, SimpleGrid, Heading, Spinner } from '@chakra-ui/react'
-import ProductCard from '../components/ProductCard'
+import ProductCard from '../components/productcard'
 import axios from 'axios'
 
 function ProductsPage() {

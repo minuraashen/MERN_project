@@ -12,18 +12,18 @@ function Navbar() {
   }
 
   return (
-    <Box px={6} py={4} bgGradient='linear(to-r, pink.500, yellow.300)'>
+    <Box px={6} py={6} bgGradient='linear(to-r, pink.500, yellow.300)'>
       <Flex alignItems="center">
         {/*Heading*/}
         <Box p='4'>
-        <Heading size="xl" color="white">
-          <Link to="/">SHOPPING STORE </Link>
+        <Heading size={{base:"lg", lg:"xl", xl:"2xl"}} color="white">
+          <Link to="/">SHOPPING STORE🛍️ </Link>
         </Heading>
         </Box>
         <Spacer/>
 
                 {/* Search Bar */}
-        <InputGroup maxW="400px" flex={8} size="lg">
+        <InputGroup maxW="800px" flex={8} size={{base:"sm", lg:"md", xl:"lg"}}>
           <Input
             type="text"
             placeholder="Search products..."
@@ -47,11 +47,11 @@ function Navbar() {
 
         {/*Cart Button */}
         <HStack spacing={3}>
-          <Button variant="outline" colorScheme="blackAlpha">
-            Cart
+          <Button variant="outline" colorScheme="blackAlpha" size={{base:"sm", lg:"md", xl:"lg"}}>
+            Cart 🛒
           </Button>
-          <Button variant="outline" colorScheme="blackAlpha">
-            Add New
+          <Button variant="outline" colorScheme="blackAlpha" size={{base:"sm", lg:"md", xl:"lg"}}>
+            <Link to='/create'>Add New</Link>
           </Button>
         </HStack>
       </Flex>

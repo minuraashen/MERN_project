@@ -1,8 +1,33 @@
 import { create } from 'zustand'
 import axios from 'axios'
+import { createCategory } from '../../../backend/controllers/category.controller'
 
 export const useCategoryStore = create((set) => ({
   categories: [],
+  setCategories: (categories) => set({categories}),
+
+  createCategory: async(newCategory) => {
+    if (!newCategory.name || !newCategory.subCategories.length) { 
+      return {success: false, message: 'All Essential Fields are Required'}
+    }
+    const res = await fetch('/api/categories', {
+      method: 'POST',
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newCategory)
+    })
+    const data = await res.json()
+    set((state) => ({ categories:[ ...state.categories, data.data]}))
+    return {success: true, message: "Category Created Successfully"}
+    
+  },
+
+
+
+
+
+  /*
   selectedCategory: null,
   selectedSubcategory: null,
   selectedSubitem: null,
@@ -42,5 +67,5 @@ export const useCategoryStore = create((set) => ({
         message: err.response?.data?.message || "Failed to update",
       }
     }
-  },
+  },*/
 }))
