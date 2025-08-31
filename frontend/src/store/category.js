@@ -24,9 +24,6 @@ export const useCategoryStore = create((set) => ({
   },
 
 
-
-
-
   /*
   selectedCategory: null,
   selectedSubcategory: null,
@@ -35,7 +32,7 @@ export const useCategoryStore = create((set) => ({
   setCategories: (categories) => set({ categories }),
   setSelectedCategory: (cat) => set({ selectedCategory: cat }),
   setSelectedSubcategory: (sub) => set({ selectedSubcategory: sub }),
-  setSelectedSubitem: (item) => set({ selectedSubitem: item }),
+  setSelectedSubitem: (item) => set({ selectedSubitem: item }), */
 
   deleteCategory: async (categoryId) => {
     try {
@@ -51,6 +48,8 @@ export const useCategoryStore = create((set) => ({
       }
     }
   },
+
+  
   updateCategory: async (categoryId, updatedData) => {
     try {
       const res = await axios.put(`/api/categories/${categoryId}`, updatedData)
@@ -67,5 +66,5 @@ export const useCategoryStore = create((set) => ({
         message: err.response?.data?.message || "Failed to update",
       }
     }
-  },*/
+  },
 }))

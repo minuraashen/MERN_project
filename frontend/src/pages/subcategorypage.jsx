@@ -10,8 +10,9 @@ function SubCategoryPage() {
 
   useEffect(() => {
     axios.get('/api/categories')
-      .then(res => {
+      .then(res => { 
         const cat = res.data.data.find(c => c.name.toLowerCase() === category.toLowerCase())
+        console.log(cat.subCategories)
         if (cat) setSubcategories(cat.subCategories || [])
       })
       .catch(err => console.error(err))

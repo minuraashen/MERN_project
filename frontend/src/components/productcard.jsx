@@ -1,6 +1,7 @@
 import { Box, Image, Text, Stack, Heading, Button } from "@chakra-ui/react"
 
 const ProductCard = ({ product }) => {
+  console.log(product)
   return (
   <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' bgColor="white">
       <Image src={product.image} alt={product.name} />
