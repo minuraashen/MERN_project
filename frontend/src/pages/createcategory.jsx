@@ -20,7 +20,7 @@ const CreateCategoryPage = () => {
       ...newCategory,
       subCategories: [
         ...newCategory.subCategories,
-        { name: "", image: "", description: "", subItems: [] }
+        { name: "", image: "", description: "" }
       ]
     })
   }
@@ -36,27 +36,6 @@ const CreateCategoryPage = () => {
   const updateSubCategory = (index, field, value) => {
     const updated = [...newCategory.subCategories]
     updated[index][field] = value
-    setNewCategory({ ...newCategory, subCategories: updated })
-  }
-
-  // Add subitem to a subcategory
-  const addSubItem = (subIndex) => {
-    const updated = [...newCategory.subCategories]
-    updated[subIndex].subItems.push({ name: "", image: "", description: "" })
-    setNewCategory({ ...newCategory, subCategories: updated })
-  }
-
-  // Remove subitem
-  const removeSubItem = (subIndex, itemIndex) => {
-    const updated = [...newCategory.subCategories]
-    updated[subIndex].subItems.splice(itemIndex, 1)
-    setNewCategory({ ...newCategory, subCategories: updated })
-  }
-
-  // Update subitem field
-  const updateSubItem = (subIndex, itemIndex, field, value) => {
-    const updated = [...newCategory.subCategories]
-    updated[subIndex].subItems[itemIndex][field] = value
     setNewCategory({ ...newCategory, subCategories: updated })
   }
 
@@ -132,42 +111,10 @@ const CreateCategoryPage = () => {
                   value={sub.description}
                   onChange={(e) => updateSubCategory(subIndex, "description", e.target.value)}
                 />
-
-                {/* Subitems */}
-                <Heading size="sm" mt={2}>Subitems</Heading>
-                {sub.subItems.map((item, itemIndex) => (
-                  <Box key={itemIndex} bg="white" p={2} rounded="md" w="full">
-                    <Flex justify="space-between" align="center">
-                      <Text fontSize="sm">Subitem {itemIndex + 1}</Text>
-                      <IconButton
-                        icon={<DeleteIcon />}
-                        size="xs"
-                        colorScheme="red"
-                        onClick={() => removeSubItem(subIndex, itemIndex)}
-                      />
-                    </Flex>
-                    <Input
-                      placeholder="Subitem Name"
-                      value={item.name}
-                      onChange={(e) => updateSubItem(subIndex, itemIndex, "name", e.target.value)}
-                    />
-                    <Input
-                      placeholder="Image URL"
-                      value={item.image}
-                      onChange={(e) => updateSubItem(subIndex, itemIndex, "image", e.target.value)}
-                    />
-                    <Textarea
-                      placeholder="Description"
-                      value={item.description}
-                      onChange={(e) => updateSubItem(subIndex, itemIndex, "description", e.target.value)}
-                    />
-                  </Box>
-                ))}
-
-                <Button size="sm" colorScheme="blue" onClick={() => addSubItem(subIndex)}>+ Add Subitem</Button>
               </VStack>
             </Box>
           ))}
+
           <Button leftIcon={<AddIcon />} colorScheme="green" onClick={addSubCategory}>Add Subcategory</Button>
 
           {/* Submit Button */}

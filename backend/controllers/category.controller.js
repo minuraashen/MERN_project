@@ -44,7 +44,7 @@ export const createCategory = async (req, res) => {
 // Update category
 export const updateCategory = async (req, res) => {
   const { id } = req.params;
-  const { name, image, description, subCategories, subItems } = req.body;
+  const { name, image, description, subCategories } = req.body;
 
   if (!mongoose.Types.ObjectId.isValid(id)) {
     return res.status(400).json({ success: false, message: 'Invalid category ID' });
@@ -53,7 +53,7 @@ export const updateCategory = async (req, res) => {
   try {
     const updatedCategory = await Category.findByIdAndUpdate(
       id,
-      { name, image, description, subCategories, subItems },
+      { name, image, description, subCategories },
       { new: true, runValidators: true }
     );
 

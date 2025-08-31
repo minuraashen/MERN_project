@@ -4,7 +4,6 @@ import Createpage from "./pages/createpage.jsx";
 import Homepage from "./pages/homepage.jsx";
 import Navbar from "./components/Navbar.jsx";
 import SubcategoryPage from './pages/subcategorypage.jsx'
-import SubItemPage from './pages/subitempage.jsx'
 import ProductsPage from './pages/productspage.jsx'
 import ProductDetailPage from './pages/productdetailpage.jsx'
 import CreateProductPage from './pages/createproduct.jsx'
@@ -20,10 +19,9 @@ function App() {
           <Route path="/create" element={<Createpage/>} />
           <Route path="/createproduct" element={<CreateProductPage/>} />
           <Route path="/createcategory" element={<CreateCategoryPage/>} />
-          <Route path="/:category/:subcategory" element={<SubcategoryPage />} />
-          <Route path="/:category/:subcategory/:subitem?" element={<SubItemPage />} />
-          <Route path="/:category/:subcategory/:subitem?/:products" element={<ProductsPage />} />
-          <Route path="/:category/:subcategory/:subitem?/:products/:productelement" element={<ProductDetailPage />} />
+          <Route path="/:category" element={<SubcategoryPage />} />
+          <Route path="/products/:subcategory" element={<ProductsPage />} />
+          <Route path="/:category/:subcategory/:products/:productelement" element={<ProductDetailPage />} />
         </Routes>
     </Box>
   );

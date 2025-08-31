@@ -1,17 +1,58 @@
-import { Box, Image, Text, Stack, Heading, Button } from "@chakra-ui/react"
+import { Button, Card, CardBody, CardFooter, Heading, Flex, useColorModeValue, VStack, useToast, useDisclosure, Image, Text, Divider, HStack, AspectRatio } from "@chakra-ui/react"
+import { useNavigate } from "react-router-dom"
 
-function ProductCard({ product }) {
+
+const SubCategoryCard = ({ subcategory }) => {
+    const navigate = useNavigate()
+
+    const handleCardClick = () => {
+      navigate(`/products/${subcategory.name.toLowerCase()}`)
+    }
+
+
   return (
-    <Box borderWidth="1px" borderRadius="lg" overflow="hidden" p={4}>
-      <Image src={product.image} alt={product.name} boxSize="200px" objectFit="cover" mx="auto" />
-      <Stack spacing={2} mt={4} textAlign="center">
-        <Heading size="md">{product.name}</Heading>
-        <Text>Rs. {product.price}</Text>
-        <Text fontSize="sm" color="gray.500">{product.description}</Text>
-        <Button colorScheme="blue">Add to Cart</Button>
-      </Stack>
-    </Box>
+    <Card onClick={handleCardClick} cursor="pointer" _hover={{ boxShadow: "lg" }}>
+      <CardBody>
+        <AspectRatio w="100%" ratio={16 / 9}>
+        <Image
+          src = {subcategory.image} alt={subcategory.name} borderRadius='md' objectFit="cover" w="100%" h="250px"
+        />
+        </AspectRatio>
+        <VStack mt={3} align="start">
+          <Heading size="lg" >{subcategory.name}</Heading>
+          <Text fontSize="sm" color="gray.600">
+            {subcategory.description}
+          </Text>
+        </VStack>
+        <CardFooter>
+          <HStack justifyContent="flex-end" w="100%">
+            <Button
+              onClick={(e) => {
+                e.stopPropagation()
+                onOpen()
+              }}
+              colorScheme="blue"
+              size="sm"
+              variant="outline"
+            >
+              Update
+            </Button>
+            <Button
+              onClick={(e) => {
+                e.stopPropagation()
+                handleDeleteSubcategory(subcategory._id)
+              }}
+              colorScheme="red"
+              size="sm"
+              variant="outline"
+            >
+              Delete
+            </Button>
+          </HStack>
+        </CardFooter>
+      </CardBody>
+    </Card>
   )
 }
 
-export default ProductCard
+export default SubCategoryCard

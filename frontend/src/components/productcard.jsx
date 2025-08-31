@@ -1,15 +1,26 @@
 import { Box, Image, Text, Stack, Heading, Button } from "@chakra-ui/react"
 
-function ProductCard({ product }) {
+const ProductCard = ({ product }) => {
   return (
-    <Box borderWidth="1px" borderRadius="lg" overflow="hidden" p={4}>
-      <Image src={product.image} alt={product.name} boxSize="200px" objectFit="cover" mx="auto" />
-      <Stack spacing={2} mt={4} textAlign="center">
-        <Heading size="md">{product.name}</Heading>
-        <Text>Rs. {product.price}</Text>
-        <Text fontSize="sm" color="gray.500">{product.description}</Text>
-        <Button colorScheme="blue">Add to Cart</Button>
-      </Stack>
+  <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden' bgColor="white">
+      <Image src={product.image} alt={product.name} />
+
+      <Box p='4'>
+        <Box display='flex' alignItems='baseline'>
+        </Box>
+
+        <Box>
+          <Box as='span' color='gray.800' fontSize='lg' >
+            <Text as='b' color='blue.800'>{product.name}</Text>
+          </Box>
+        </Box>
+
+        <Box display='flex' mt='2' alignItems='center'>
+          <Box as='span' color='black' fontSize='lg'>
+              {`Rs: ${product.price}`}
+          </Box>
+        </Box>
+      </Box>
     </Box>
   )
 }

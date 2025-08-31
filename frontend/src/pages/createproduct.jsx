@@ -12,7 +12,6 @@ const CreateProductPage = () => {
     image: "",
     category: "",
     subcategory: "",
-    subitem: ""
   })
 
   const toast = useToast()
@@ -44,7 +43,6 @@ const CreateProductPage = () => {
     image: "",
     category: "",
     subcategory: "",
-    subitem: ""
   })
   }
 
@@ -114,13 +112,6 @@ const CreateProductPage = () => {
           placeholder='Subcategory'
           value={newProduct.subcategory}
           onChange={(e) => setNewProduct({ ...newProduct, subcategory: e.target.value})}
-          />
-          <Input
-          fontSize='2xl'
-          h={{ base:'40px', md:'64px', lg:'80px' }}
-          placeholder='Subitem'
-          value={newProduct.subitem}
-          onChange={(e) => setNewProduct({ ...newProduct, subitem: e.target.value})}
           />
           <Button onClick={handleAddProduct} colorScheme="purple" w="full" h='80px'>
             <Text fontSize='2xl'>Add Product</Text>

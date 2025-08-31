@@ -14,7 +14,7 @@ const CategoryCard = ({ category }) => {
   const navigate = useNavigate()
 
   const handleCardClick = () => {
-    navigate(`/category/${category.name.toLowerCase()}`)
+    navigate(`/${category.name.toLowerCase()}`)
   }
 
   const handleDeleteCategory = async(pid) => {

@@ -8,7 +8,6 @@ const productSchema = new mongoose.Schema({
   image: {type: String, required: true},
   category: {type: String, required: true},
   subcategory: {type: String, required: true},
-  subitem: {type: String}
 },{
   timestamps: true // Automatically adds createdAt and updatedAt fields
 });
