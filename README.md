@@ -69,7 +69,7 @@ cd ../frontend
 npm start
 ```
 
-## 📌 API Endpoints  
+## 📌 API Endpoints
 
 ### **Category Routes** `/api/categories`
 | Method | Endpoint             | Description                  |
@@ -92,8 +92,14 @@ npm start
 ---
 
 ## Results (Up to now)
-### 1. Checking APIs with Postman  
-  
+### 1. 🧪 API Testing with Postman
+I tested the backend API easily using **Postman** before jump into the frontend by following these steps to verify that all routes work correctly:
+
+#### 💡 Tips
+- Always set Content-Type = application/json for POST/PUT requests.
+- Use Postman’s Save Response feature to keep sample data.  
+- If you get 500 Internal Server Error, check your MongoDB connection and body fields.
+
 All functions in category controller✅  
   
 ![](./Results/postmancategory.png)  
@@ -104,7 +110,10 @@ All functions in product controller✅
 
 ---
 
-### 2. Home Page  
+### 🏠 1. Homepage  
+
+The **Homepage** displays all the available **Category Cards** in a grid layout.  
+Each card contains:
 
 ***Step 1***  
 <img src="./Results/Homepage_v1.png" alt="Step 1" width="800" >  
@@ -113,7 +122,8 @@ All functions in product controller✅
 <img src="./Results/Homepage_v2.png" alt="Step 2" width="800" >  
 
 ***Step 3***  
-<img src="./Results/Homepage_v3.png" alt="Step 3" width="800" >  
+<img width="879" height="744" alt="Screenshot 2025-09-01 194233" src="https://github.com/user-attachments/assets/9b762605-293f-4fe0-8075-39bb3c03a261" />
+
 
 ---
 
@@ -129,7 +139,54 @@ All functions in product controller✅
 
 ***Create Category***
 
-<img src="./Results/addcategory.png" width="600">  
+<img width="800" alt="Screenshot 2025-09-01 194306" src="https://github.com/user-attachments/assets/184188fd-f532-4a5a-a6b5-301450105abe" />
+
+---
+
+### 🗂️ 4. Subcategory Page  
+
+When you click on a **Category Card**, its subcategory page will open.  
+Here’s an example of the **Furniture Category** subcategory page:  
+
+<img width="800" alt="Screenshot 2025-09-01 194214" src="https://github.com/user-attachments/assets/51a64c27-aa6c-422c-ac11-a852d95ae853" />
+
+---
+
+### 🛍️ 5. Products Page  
+
+When you click on a **Subcategory Card**, it will navigate to the relevant products page.  
+Here’s an example of the **Products Page** for the Furniture → Sofa Sets subcategory:  
+
+<img width="800" alt="Screenshot 2025-09-01 194158" src="https://github.com/user-attachments/assets/39db7c29-1c03-4a3e-be17-1041e96053cc" />
+
+## 🚀 Future Improvements  
+
+Planned features and enhancements for upcoming versions:  
+
+- 🔑 **User Authentication & Authorization**  
+  - User signup/login with JWT  
+  - Admin panel for managing products and categories  
+
+- 💳 **Payment Integration**  
+  - Secure payment gateway (Stripe / PayPal)  
+  - Order tracking system  
+
+- 📊 **Search & Filters**  
+  - Search bar to find products by name  
+  - Category, price range, and rating filters  
+
+- 🛠️ **Deployment & CI/CD**  
+  - Deploy to free hosting (Render/Netlify/Vercel)  
+  - Add CI/CD pipeline for automatic build and deploy  
+
+- 📱 **PWA Support**  
+  - Make the app installable as a Progressive Web App  
+  - Offline access to products and categories  
+
+---
+
+
+ 
 
 
 
