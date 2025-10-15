@@ -62,7 +62,7 @@ function ProductsPage() {
       ) : products.length === 0 ? (
         <Box>No products found in this subcategory.</Box>
       ) : (
-        <SimpleGrid columns={[1, 2, 3]} spacing={4}>
+        <SimpleGrid columns={{md:1, lg:2, xl:3, '2xl':4}} spacing={1}>
           {products.map(p => (
             <ProductCard key={p._id} product={p} />
           ))}

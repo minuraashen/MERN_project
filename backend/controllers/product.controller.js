@@ -33,13 +33,6 @@ export const createProducts = async (req,res) => {
       return res.status(404).json({ success: false, message: "Subcategory not found" });
     }
 
-    // 3. Check if subitem exists (if provided)
-    const subItemDoc = subCategoryDoc.subItems.find(si => si.name === subitem);
-    console.log(subItemDoc)
-    if (subitem && !subItemDoc) {
-      return res.status(404).json({ success: false, message: "Subitem not found in subcategory" });
-    }
-
   const newProduct = new Product({
       name,
       price,
@@ -48,7 +41,6 @@ export const createProducts = async (req,res) => {
       image,
       category: categoryDoc._id,
       subcategory: subCategoryDoc ? subCategoryDoc._id : undefined,
-      subitem: subItemDoc ? subItemDoc._id : undefined
   });
 
   try {

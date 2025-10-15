@@ -6,8 +6,8 @@ const productSchema = new mongoose.Schema({
   stock: {type: Number, required: true},
   description: {type: String},
   image: {type: String, required: true},
-  category: {type: String, required: true},
-  subcategory: {type: String, required: true},
+  category: {type: mongoose.Schema.Types.ObjectId, ref:'category', required: true},
+  subcategory: {type: mongoose.Schema.Types.ObjectId, ref:'subcategory', required: true},
 },{
   timestamps: true // Automatically adds createdAt and updatedAt fields
 });
